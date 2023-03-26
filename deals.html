@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en" class="flex justify-center text-gray-800 bg-gradient-to-r from-green-600/50 to-red-600/50">
+   <head>
+      <meta charset="utf-8">
+      <title>Christmas Store</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+			tailwind.config = {
+			  theme: {
+				 extend: {
+					backgroundImage: {
+						'banner-img': "url('blizzard_banner.jpg')"
+					},
+
+					fontFamily: {
+						'aside': ['Oswald', '"Open Sans"', 'sans-serif'],
+					}
+				 }
+			  }
+			}
+		 </script>
+       <script type="module" src="./script.js"></script>
+   </head>
+
+   <div class="max-w-prose text-center">
+      <header class="bg-banner-img contrast-125 static">
+         <div class="mb-2">
+            <h1 class="text-4xl px-4 pt-4 drop-shadow-md">Welcome to Our Christmas Store!</h1>
+            <p class="text-base px-12 italic drop-shadow-md">This page should be tried in Safari, Chrome, or Mozilla.</p>
+         </div>
+         
+         
+      </header>
+
+      <nav>
+         <ul class="flex justify-center pb-2 relative">
+            <li><a class="mx-1 bg-blue-500 rounded-md px-2 hover:bg-blue-200 text-lg visited:bg-purple-600" href="index.html">Home</a></li>
+            <li><a class="mx-1 bg-blue-500 rounded-md px-2 hover:bg-blue-200 text-lg visited:bg-purple-600" href="contact.html">Contact Us</a></li>
+            <li><a class="mx-1 bg-blue-500 rounded-md px-2 hover:bg-blue-200 text-lg visited:bg-purple-600" href="deals.html">Today's Deals</a></li>
+         </ul>
+		</nav>
+
+      <article class="justify-center">
+         <h1 class="w-full border-2 rounded-2xl p-1 bg-cyan-200 font-form italic">Shop Our Best Holiday Deals Online</h1>
+         <div>
+         <table class="border-2 border-black my-4 w-full" id="dealTable">
+            <tr>
+               <th class="border-2 border-black text-cyan-200 bg-purple-600 py-1 px-2">Items</th>
+               <th class="border-2 border-black text-cyan-200 bg-purple-600 py-1 px-2">Original Price</th>
+               <th class="border-2 border-black text-cyan-200 bg-purple-600 py-1 px-2">Today's Deal</th>
+            </tr>
+
+            <tr class="border-2 border-black">
+               <td>Ornament Variety Pack</td>
+               <td>$34.99</td>
+               <td><em>$15.99</em></td>
+            </tr>
+
+            <tr class="bg-purple-600 border-2 border-black">
+               <td>Festive Tree Topper</td>
+               <td>$25.99</td>
+               <td><em>$10.99</em></td>
+            </tr>
+
+            <tr class="border-2 border-black">
+               <td>4 ft. Artificial Christmas Tree</td>
+               <td>$70.99</td>
+               <td><em>$25.99</em></td>
+            </tr>
+
+            <tr class="bg-purple-600 border-2 border-black">
+               <td>3 ft. Silver Tinsel</td>
+               <td>$20.99</td>
+               <td><em>$5.99</em></td>
+            </tr>
+         </table>
+         </div>
+
+         <ul class="grid grid-cols-3 mb-2" id="dealCards">
+            <li class="border-4 border-blue-600 rounded-md overflow-hidden shadow-lg shadow-pink-500 hover:shadow-green-500 bg-red-400 mb-2 mx-1">
+               <img alt="Christmas Wreath" src="https://images.costco-static.com/ImageDelivery/imageService?profileId=12026540&itemId=1487773-847&recipeName=680">
+                 <div class="pb-3 text-justify ml-2">
+                     <p class="text-green-400 font-semibold mb-2">
+                        Ornament Variety Pack
+                     </p>
+                     <span class="bg-cyan-700 rounded-lg text-lg text-bold px-2.5 py-1 italic">
+                         50%
+                     </span>
+                 </div>
+            </li>
+            <li class="border-4 border-blue-600 rounded-md overflow-hidden shadow-lg shadow-pink-500 hover:shadow-green-500 bg-red-400 mb-2 mx-1">
+               <img alt="Christmas Tree Topper" src="https://ecx.images-amazon.com/images/I/413ng%2Bcoh7L.jpg">
+                 <div class="pb-3 text-justify ml-2">
+                     <p class="text-green-400 font-semibold mb-2">
+                        Festive Tree Topper
+                     </p>
+                     <span class="bg-cyan-700 rounded-lg text-lg text-bold px-2.5 py-1 italic">
+                         55%
+                     </span>
+                 </div>
+            </li>
+            <li class="border-4 border-blue-600 rounded-md overflow-hidden shadow-lg shadow-pink-500 hover:shadow-green-500 bg-red-400 mb-2 mx-1">
+               <img alt="Christmas Tree" src="https://images-na.ssl-images-amazon.com/images/I/81b7EZjEgOL._SL1500_.jpg">
+                 <div class="pb-3 text-justify ml-2">
+                     <p class="text-green-400 font-semibold mb-2">
+                        Artificial Christmas Tree
+                     </p>
+                     <span class="bg-cyan-700 rounded-lg text-lg text-bold px-2.5 py-1 italic">
+                         65%
+                     </span>
+                 </div>
+            </li>
+            <li class="border-4 border-blue-600 rounded-md overflow-hidden shadow-lg shadow-pink-500 hover:shadow-green-500 bg-red-400 mb-2 mx-1">
+               <img alt="Silver Tinsel" src="https://thumb7.shutterstock.com/image-photo/redirected-150nw-42857893.jpg" class="w-full">
+                 <div class="pb-3 text-justify ml-2">
+                     <p class="text-green-400 font-semibold mb-2">
+                        Silver Tinsel
+                     </p>
+                     <span class="bg-cyan-700 rounded-lg text-lg text-bold px-2.5 py-1 italic">
+                         70%
+                     </span>
+                 </div>
+            </li>
+         </ul>
+      </article>
+
+      <aside class="text-amber-800">
+			<p>Come and visit our store in person: <a class="italic underline text-blue-200 visited:text-green-300" href="https://www.google.com/maps/place/10822+Co+Hwy+5,+Monroeville,+AL+36460/@31.5525086,-87.1622161,17z/data=!4m13!1m7!3m6!1s0x889020dfafbd9be3:0xdc7a56a37d3904d3!2sBurnt+Corn,+AL+36460!3b1!8m2!3d31.5534949!4d-87.1602592!3m4!1s0x889020df0ccb5227:0xca62e555f887f410!8m2!3d31.5526696!4d-87.1593348">10822 Co Hwy 5, Monroeville, AL 36460</a></p>
+		</aside>
+
+		<footer class="font-aside">
+			&#169; 2016 Miskell
+		</footer>
+   </div>
+
+</html>
